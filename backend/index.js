@@ -12,9 +12,10 @@ app.use("/user", userRouter);
 app.use("/note", noteRouter);
 
 
-app.listen(5500, async () => {
+app.listen(4500, async () => {
   try {
     await connection;
-    console.log("Sever at 5500 and DataBase is connected");
+    console.log("DataBase is connected");
+    console.log("Sever at 4500 is connected");
   } catch (error) {}
 });
